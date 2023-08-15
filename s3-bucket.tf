@@ -1,5 +1,6 @@
 module "s3_bucket" {
-  source = "terraform-aws-modules/s3-bucket/aws"
+  source  = "app.terraform.io/CHIP_test_organization/s3-bucket/aws//examples/complete"
+  version = "2.8.0"
 
   bucket = "my-s3-bucket"
   acl    = "private"
